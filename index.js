@@ -46,11 +46,6 @@ inquirer
 },
 {
     type: 'input',
-    name: 'githubUsername',
-    message: 'What is your github username?',
-},
-{
-    type: 'input',
     name: 'githubURL',
     message: 'What is your github url?',
 },
@@ -60,10 +55,10 @@ inquirer
     message: 'What is your email?',
 },
 ])
-.then((answers) => {
-    generateMarkdown(answers)
+.then((data) => {
+    generateMarkdown(data)
 
-    fs.writeFile('README.md', generateMarkdown, (err) =>
+    fs.writeFile('README.md', generateMarkdown(data), (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
