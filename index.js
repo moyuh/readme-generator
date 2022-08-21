@@ -1,12 +1,9 @@
-// https://img.shields.io/github/license/moyuh/readme-generator
-
-// TODO: Include packages needed for this application
+//Packages:
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
-// const questions = [{
+//Prompts for the data to generate the README.md
 inquirer
   .prompt([{
     type: 'input',
@@ -32,7 +29,7 @@ inquirer
     type: 'list',
     name: 'license',
     message: 'Which license was used for your project?',
-    choices: ['apache','MIT','GNU','no license used'],
+    choices: ['apache','mit','no license used'],
 },
 {
     type: 'input',
@@ -55,21 +52,13 @@ inquirer
     message: 'What is your email?',
 },
 ])
+//Generate a README.md file based off data from the above prompts
 .then((data) => {
     generateMarkdown(data)
 
-    fs.writeFile('README.md', generateMarkdown(data), (err) =>
+    fs.writeFile('README-template.md', generateMarkdown(data), (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
   });
 
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();

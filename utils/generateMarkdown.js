@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license !== 'no license used'){
@@ -7,12 +7,10 @@ function renderLicenseBadge(license) {
     return ' ';
   }
 };
-
-// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license !== 'no license used'){
-    return `[${license}](https://choosealicense.com/licenses/${license})`
+    return `[${license}](https://choosealicense.com/licenses/${license}/)`
   } else {
     return ' ';
   }
@@ -22,7 +20,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'no license used'){
-    return `##[License](#table-of-contents) This project is under the following license: 
+    return `[License](#table-of-contents) 
+    This project is under the following license: 
     ${renderLicenseLink(license)}`;
   } else{
     return '';
@@ -41,21 +40,23 @@ function renderLicenseToTableOfContents(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
+${renderLicenseBadge(data.license)}
+
 ## Table of Contents
 
-*[Description](#description)
+* [Description](#description)
 
-*[Installation](#installation)
+* [Installation](#installation)
 
-*[Usage](#usage)
+* [Usage](#usage)
 
 * ${renderLicenseToTableOfContents(data.license)}
 
-*[Contributer](#contributer)
+* [Contributer](#contributer)
 
-*[Tests](#tests)
+* [Tests](#tests)
 
-*[Questions](#questions)
+* [Questions](#questions)
  
  ## [Description](#table-of-contents)
  ${data.description} 
@@ -68,7 +69,7 @@ function generateMarkdown(data) {
 
  ## ${renderLicenseSection(data.license)}
  ${renderLicenseBadge(data.license)}
-
+ 
  ## [Contributer](#table-of-contents)
  ${data.contributer}
 
@@ -79,12 +80,12 @@ function generateMarkdown(data) {
 
  To see my other work take a look at my public repositories on github:
 
- [Github:](${data.githubURL})
+ Github: [Github Link](${data.githubURL})
 
 
  To contact me directly please reach out to the following email:
 
- [Email:${data.email}](mailto:${data.email})
+ Email: [${data.email}](mailto:${data.email})
 
 `;
 }
