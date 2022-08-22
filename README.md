@@ -26,6 +26,7 @@
  4. Answer all the questions in detail and after the last question is answered Viola! A README-template.md will appear!
 
 Below is a video walkthrough of the last 2 steps!
+
 <img src="images/Untitled_ Aug 21, 2022 5_45 PM.gif"/>
 
  ## [Usage](#table-of-contents)
