@@ -26,7 +26,8 @@
  4. Answer all the questions in detail and after the last question is answered Viola! A README-template.md will appear!
 
 Below is a video walkthrough of the last 2 steps!
-<iframe src="https://drive.google.com/file/d/1zi00XPrru0ARztRtczy6km1UrhZmT9Dr/preview" width="640" height="480"></iframe>
+<img src="/Users/monicayuh/Code/Challenges/week-9/readme-generator/images/Untitled_ Aug 21, 2022 5_45 PM.gif">
+
  ## [Usage](#table-of-contents)
  To create an easy README.md file to take out the stress for programmers to worry about adding the correct information in the proper format.
 
