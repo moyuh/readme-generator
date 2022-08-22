@@ -23,8 +23,10 @@
  1. Clone this repository 
  2. Install the associated packages by opening the integrated terminal and using npm i 
  3. To run through the generated questions that will provide the data for the README.md type node index.js in the integrated terminal. 
- 4. Answer all the questions in detail and after the last question is answered Viola! A README-template.md will apear!
+ 4. Answer all the questions in detail and after the last question is answered Viola! A README-template.md will appear!
 
+Below is a video walkthrough of the last 2 steps!
+<iframe src="https://drive.google.com/file/d/1zi00XPrru0ARztRtczy6km1UrhZmT9Dr/preview" width="640" height="480"></iframe>
  ## [Usage](#table-of-contents)
  To create an easy README.md file to take out the stress for programmers to worry about adding the correct information in the proper format.
 

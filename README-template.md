@@ -1,4 +1,6 @@
-# ;lkajsd
+# Example project
+
+![badge](https://img.shields.io/badge/license-mit-blue )
 
 ## Table of Contents
 
@@ -17,32 +19,33 @@
 * [Questions](#questions)
  
  ## [Description](#table-of-contents)
- laksdjf 
+ Example Description 
 
  ## [Installation](#table-of-contents)
- ;asldkjf
+ Example instructions
 
  ## [Usage](#table-of-contents)
- lkasjd
+ Example Use
 
- ## [License](#table-of-contents) This project is under the following license: 
-    [apache](https://choosealicense.com/licenses/apache/)
- ![badge](https://img.shields.io/badge/license-apache-blue )
-
+ ## [License](#table-of-contents) 
+    This project is under the following license: 
+    [mit](https://choosealicense.com/licenses/mit/)
+ ![badge](https://img.shields.io/badge/license-mit-blue )
+ 
  ## [Contributer](#table-of-contents)
- lkajfsd
+ Example Contributers
 
  ## [Tests](#table-of-contents)
- fasdl
+ Example Tests
 
  ## [Questions](#table-of-contents)
 
  To see my other work take a look at my public repositories on github:
 
- Github: [Github Link](dsfkl;)
+ Github: [Github Link](example.com)
 
 
  To contact me directly please reach out to the following email:
 
- Email: [dskl;f](mailto:dskl;f)
+ Email: [exampleemail@email.com](mailto:exampleemail@email.com)
 
